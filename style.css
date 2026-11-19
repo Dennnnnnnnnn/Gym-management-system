@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f0f2f5; color: #222; margin: 0; font-size: 14px; }
+.site-header { background: #fff; border-bottom: 1px solid #ddd; }
+.site-header-inner { max-width: 1100px; margin: auto; padding: 15px 20px; }
+.site-header h2 { font-size: 20px; margin: 0 0 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+nav a { color: #333; text-decoration: none; padding-bottom: 5px; }
+nav a:hover, nav a.active { color: #168554; border-bottom: 2px solid #21a46d; }
+.container { max-width: 1100px; margin: 24px auto; padding: 0 20px; }
+h1 { font-size: 23px; margin: 0 0 20px; }
+h3 { font-size: 18px; margin-top: 0; }
+.card { background: #fff; padding: 20px; border: 1px solid #e2e2e2; border-radius: 5px; margin-bottom: 20px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+th { background: #21a46d; color: #fff; }
+input, select, textarea { max-width: 100%; padding: 7px; border: 1px solid #bbb; border-radius: 3px; font-family: inherit; }
+button, .btn { padding: 7px 11px; border: 0; background: #21a46d; color: white; border-radius: 3px; text-decoration: none; cursor: pointer; display: inline-block; font-size: 13px; }
+button:hover, .btn:hover { opacity: .9; }
+button:disabled { opacity: .5; cursor: default; }
+.btn-green { background: #28a745; }
+.btn-red { background: #dc3545; }
+.btn-blue { background: #17b88a; }
+.filter-form { margin-bottom: 10px; background: #f8f9fa; padding: 10px; border: 1px solid #e9ecef; }
+.message { background: #e8f6ee; border: 1px solid #b8dfc9; padding: 10px; margin-bottom: 20px; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 10px; }
+@media(max-width: 600px) { .container { padding: 0 12px; } .card { padding: 12px; } th, td { padding: 7px; } }
+
+.schedule-form { display: grid; grid-template-columns: 190px minmax(0, 260px); align-items: center; gap: 10px 14px; margin-bottom: 10px; }
+.schedule-form button { grid-column: 2; justify-self: start; }
+.help-text { color: #666; font-size: 13px; }
+@media(max-width: 520px) { .schedule-form { grid-template-columns: 1fr; } .schedule-form button { grid-column: 1; } }
+
+.pagination { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.pagination a { padding:5px 9px; border:1px solid #ddd; color:#168554; text-decoration:none; border-radius:3px; }
+.pagination a.current { background:#21a46d; color:white; border-color:#21a46d; }
+.search-form { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+.search-form input { min-width:180px; }
+
+.full-input { width:100%; box-sizing:border-box; }
+.inline-form { display:inline-flex; gap:5px; flex-wrap:wrap; align-items:center; }
